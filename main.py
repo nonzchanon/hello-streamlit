@@ -157,7 +157,7 @@ def run():
           max_hourly_ghi=hourly_ghi.max()
 
           
-          m1.metric(label='Max Daily GHI (kWh/m\u00b2)',value="{:.2f}".format(max_hourly_ghi))
+          m1.metric(label='Max Daily GHI (kW/m\u00b2)',value="{:.2f}".format(max_hourly_ghi))
           
           hourly_ghi=pd.DataFrame({"Daily Solar Irradiation (Wh/m2)": hourly_ghi})
         
@@ -228,7 +228,7 @@ def run():
 
       total_daily_production = min15_production * total_area
       
-      m1.metric(label='Max Solar Energy (kWh)',value="{:.2f}".format(total_daily_production.max()))
+      m1.metric(label='Max Solar Energy (kW)',value="{:.2f}".format(total_daily_production.max()))
 
       total_daily_production=pd.DataFrame({"Daily Solar Energy Production (kWh)": total_daily_production})
 
