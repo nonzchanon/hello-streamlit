@@ -2,4 +2,14 @@ altair
 numpy
 pandas
 pydeck
+pandas
 streamlit
+plotly
+pvlib
+tzwhere
+folium
+streamlit-folium
+requests
+pillow
+pytz
+geopy
