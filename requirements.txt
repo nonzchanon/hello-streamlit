@@ -13,3 +13,4 @@ requests
 pillow
 pytz
 geopy
+scikit-learn
