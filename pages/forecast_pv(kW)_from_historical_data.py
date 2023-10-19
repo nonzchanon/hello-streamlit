@@ -19,7 +19,7 @@ def pv_data():
     # Filter out the specific PerformanceWarning
 
     # read uacj data 18/10/2023
-    uacj_data_current = pd.read_csv('./workspaces/hello-streamlit/pages/data/Curve_UACJ solar_20231019121210.csv' , skiprows=1)
+    uacj_data_current = pd.read_csv('./workspaces/hello-streamlit/data/Curve_UACJ solar_20231019121210.csv' , skiprows=1)
     # uacj_data_current = uacj_data_current.sort_values(by='Time')
     uacj_data_current.rename(columns={
     'Meteo Station5(08224)/Temp. (PV module)(℃)' : 'PV_module_temp(c)',
@@ -49,7 +49,7 @@ def pv_data():
 
 
 def gbr_models():
-    loaded_model = joblib.load('./workspaces/hello-streamlit/pages/models/chained_gbr_model.joblib')
+    loaded_model = joblib.load('./workspaces/hello-streamlit/models/chained_gbr_model.joblib')
     return loaded_model
 
 
